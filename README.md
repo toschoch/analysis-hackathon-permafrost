@@ -1,10 +1,10 @@
-ETH Hackathon Permafrost
+{{cookiecutter.project_name}}
 ==============================
 
 Description
 -----------
 
-The mountains are changing: permafrost is receding, rockslides can be the result. ETH Zurich scientists Jan Beutel and Matthias Meyer want to understand this in more detail. They have been researching and monitoring permafrost around the clock for many years. They have collected a series of images and data that is unique in the world, and would like to analyze with you at a hackathon
+{{cookiecutter.description}}
 
 Usage
 -----
@@ -31,9 +31,7 @@ Project Organization
     │                         `1.0-jqp-initial-data-exploration`.
     │
     ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   ├── numbers        <- numerical data to be automatically included in the generated report
-    │   ├── figures        <- Generated graphics and figures to be used in reporting
-    │   └── report_template.docx
+    │   └── figures        <- Generated graphics and figures to be used in reporting
     │
     ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
     │                         generated with `pip freeze > requirements.txt`
@@ -58,8 +56,8 @@ Project Organization
     │   │   └── train_model.py
     │   │
     │   └── visualization  <- Scripts to create exploratory and results oriented visualizations
-    │       ├──__init__.py <- Makes visualization a Python module
-    │       └── utils.py   <- some helper functions for the creation of the figures
+    │ 
+    ├── doitutils          <- some utils to help collecting functions and tasks
     └── dodo.py            <- project task for execution with doit
 ```
 --------

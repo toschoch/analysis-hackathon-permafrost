@@ -14,15 +14,15 @@ def task_data():
 
     functions = collect_functions('src.data')
 
-    inputpath = pathlib.Path("data/raw")
-    outpath = pathlib.Path("data/processed")
+    input_path = pathlib.Path("data/raw")
+    out_path = pathlib.Path("data/processed")
     for func_name, func, src_file in functions:
-        outfiles = target_filenames(outpath, func, suffix='_')
+        out_files = target_filenames(out_path, func, suffix='_')
 
         yield {'name': func_name,
                'doc': func.__doc__,
-               'actions': [(func, [inputpath])],
-               'targets': outfiles,
+               'actions': [(func, [input_path])],
+               'targets': out_files,
                'file_dep': [src_file],
                'clean': True}
 
