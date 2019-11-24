@@ -247,6 +247,7 @@ dependencies:
     - mizani==0.6.0
     - palettable==3.3.0
     - plotnine==0.6.0
+    - quickplot==0.5.0
     - tzlocal==2.0.0
 prefix: /home/tobi/numerics/envs/permafrost
 
